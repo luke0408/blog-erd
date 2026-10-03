@@ -33,6 +33,6 @@ generatorHandler({
     });
     const output = options.generator.output?.value ?? "./erd.md";
     await mkdir(dirname(output), { recursive: true });
-    await writeFile(output, formatted, "utf8");
+    await writeFile(output, formatted.trimEnd() + "\n", "utf8");
   },
 });
