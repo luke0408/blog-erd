@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "PostgreSQL schema study with Prisma and prisma-markdown",
+  "description": "MySQL schema study with Prisma and prisma-markdown",
   "scripts": {
     "schema:format": "prisma format",
     "schema:validate": "prisma validate",

@@ -8,6 +8,9 @@ const rendererRequire = createRequire(require.resolve("prisma-markdown"));
 const { generatorHandler } = rendererRequire("@prisma/generator-helper");
 const { version } = require("prisma-markdown/package.json");
 
+// Keep multibyte schema comments intact across generator input chunks.
+process.stdin.setEncoding("utf8");
+
 generatorHandler({
   onManifest: () => ({
     version,
