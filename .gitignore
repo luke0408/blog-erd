@@ -1,0 +1,20 @@
+node_modules/
+/generated/
+
+# 로컬 스크립트는 제외하고 ERD 필수 생성기만 추적
+/scripts/*
+!/scripts/generate-erd.mjs
+
+# 로컬 환경과 비밀 정보
+.env
+.env.*
+!.env.example
+
+# 로그와 임시 산출물
+*.log
+/coverage/
+
+# 운영체제 및 편집기 임시 파일
+.DS_Store
+*.swp
+*.swo

@@ -1,0 +1,24 @@
+{
+  "name": "study-erd",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "PostgreSQL schema study with Prisma and prisma-markdown",
+  "scripts": {
+    "schema:format": "prisma format",
+    "schema:validate": "prisma validate",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev",
+    "db:studio": "prisma studio",
+    "erd:build": "prisma generate --generator markdown",
+    "dev": "npm run erd:build"
+  },
+  "devDependencies": {
+    "dotenv": "18.0.5",
+    "prisma": "6.19.3",
+    "prisma-markdown": "3.0.1"
+  },
+  "dependencies": {
+    "@prisma/client": "6.19.3"
+  }
+}
